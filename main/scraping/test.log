@@ -1,0 +1,257 @@
+
+DEBUG 2022-06-23 14:49:36,877 - POST http://127.0.0.1:62350/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG 2022-06-23 14:49:36,879 - Starting new HTTP connection (1): 127.0.0.1:62350
+DEBUG 2022-06-23 14:49:39,320 - http://127.0.0.1:62350 "POST /session HTTP/1.1" 200 800
+DEBUG 2022-06-23 14:49:39,325 - Finished Request
+DEBUG 2022-06-23 14:49:42,327 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/window/rect {"x": null, "y": null, "width": 1280, "height": 800}
+DEBUG 2022-06-23 14:49:42,440 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/window/rect HTTP/1.1" 200 55
+DEBUG 2022-06-23 14:49:42,441 - Finished Request
+DEBUG 2022-06-23 14:49:42,441 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/timeouts {"implicit": 20000}
+DEBUG 2022-06-23 14:49:42,445 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/timeouts HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:49:42,445 - Finished Request
+DEBUG 2022-06-23 14:49:42,446 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/url {"url": "https://www.glassdoor.com/Reviews/index.htm"}
+DEBUG 2022-06-23 14:49:49,713 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/url HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:49:49,714 - Finished Request
+INFO 2022-06-23 14:49:49,714 - Driver launched and intialized on glassdoor.com
+DEBUG 2022-06-23 14:49:53,084 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight)", "args": []}
+DEBUG 2022-06-23 14:49:53,166 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:49:53,167 - Finished Request
+DEBUG 2022-06-23 14:49:55,477 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element {"using": "xpath", "value": "//*[@id=\"Footer\"]/nav/ul[2]/li[3]/div/div/div[1]"}
+DEBUG 2022-06-23 14:49:55,494 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:49:55,494 - Finished Request
+DEBUG 2022-06-23 14:49:55,495 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element/a6b7ed88-706d-42cc-8efe-fcc89e5efa86/click {"id": "a6b7ed88-706d-42cc-8efe-fcc89e5efa86"}
+DEBUG 2022-06-23 14:49:55,569 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element/a6b7ed88-706d-42cc-8efe-fcc89e5efa86/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:49:55,569 - Finished Request
+DEBUG 2022-06-23 14:49:55,569 - GET http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/source {}
+DEBUG 2022-06-23 14:49:55,688 - http://127.0.0.1:62350 "GET /session/331d6e45e167cdd23f659822d61e2c1f/source HTTP/1.1" 200 537085
+DEBUG 2022-06-23 14:49:55,698 - Finished Request
+DEBUG 2022-06-23 14:49:55,795 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element {"using": "css selector", "value": "[id=\"option_22_717755-68a8-6c4b-7e53-d5dc046466\"]"}
+DEBUG 2022-06-23 14:49:55,808 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:49:55,808 - Finished Request
+DEBUG 2022-06-23 14:49:58,582 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element/0c3cf3e0-1fc5-4a1a-995f-2cdb5dab7494/click {"id": "0c3cf3e0-1fc5-4a1a-995f-2cdb5dab7494"}
+DEBUG 2022-06-23 14:49:59,676 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element/0c3cf3e0-1fc5-4a1a-995f-2cdb5dab7494/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:49:59,677 - Finished Request
+INFO 2022-06-23 14:50:03,306 - Language succesfully changed to English
+DEBUG 2022-06-23 14:50:03,306 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element {"using": "xpath", "value": "//*[@id=\"KeywordSearch\"]"}
+DEBUG 2022-06-23 14:50:03,320 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:50:03,320 - Finished Request
+DEBUG 2022-06-23 14:50:03,320 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element/90b1202a-cba1-40f5-9158-5989f95a9ca6/value {"text": "pwc", "value": ["p", "w", "c"], "id": "90b1202a-cba1-40f5-9158-5989f95a9ca6"}
+DEBUG 2022-06-23 14:50:03,530 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element/90b1202a-cba1-40f5-9158-5989f95a9ca6/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:50:03,531 - Finished Request
+DEBUG 2022-06-23 14:50:03,531 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element/90b1202a-cba1-40f5-9158-5989f95a9ca6/value {"text": "\ue007", "value": ["\ue007"], "id": "90b1202a-cba1-40f5-9158-5989f95a9ca6"}
+DEBUG 2022-06-23 14:50:03,639 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element/90b1202a-cba1-40f5-9158-5989f95a9ca6/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:50:03,639 - Finished Request
+DEBUG 2022-06-23 14:50:03,640 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element {"using": "xpath", "value": "//*[@id=\"MainCol\"]/div/div[1]/div/div[1]/div/div[2]/h2/a"}
+DEBUG 2022-06-23 14:50:07,746 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:50:07,746 - Finished Request
+DEBUG 2022-06-23 14:50:07,746 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/element/95d01eb2-e1fb-4b96-ae53-37c2aceb19ec/click {"id": "95d01eb2-e1fb-4b96-ae53-37c2aceb19ec"}
+DEBUG 2022-06-23 14:50:14,417 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/element/95d01eb2-e1fb-4b96-ae53-37c2aceb19ec/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:50:14,418 - Finished Request
+INFO 2022-06-23 14:50:14,418 - Found result for pwc
+DEBUG 2022-06-23 14:50:14,418 - GET http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/source {}
+DEBUG 2022-06-23 14:50:14,911 - http://127.0.0.1:62350 "GET /session/331d6e45e167cdd23f659822d61e2c1f/source HTTP/1.1" 200 766340
+DEBUG 2022-06-23 14:50:14,917 - Finished Request
+DEBUG 2022-06-23 14:50:15,035 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/url {"url": "https://www.glassdoor.com/Avis/PwC-Avis-E8450.htm"}
+DEBUG 2022-06-23 14:50:15,918 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/url HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:50:15,918 - Finished Request
+INFO 2022-06-23 14:50:15,918 - Succesfully got reviews page
+DEBUG 2022-06-23 14:50:19,413 - POST http://127.0.0.1:62350/session/331d6e45e167cdd23f659822d61e2c1f/execute/sync {"script": "\n        javascript:(function(){\n          document.getElementsByClassName('hardsellOverlay')[0].remove();\n          document.getElementsByTagName(\"body\")[0].style.overflow = \"scroll\";\n          let style = document.createElement('style');\n          style.innerHTML = `\n            #LoginModal {\n              display: none!important;\n            }\n          `;\n          document.head.appendChild(style);\n          window.addEventListener(\"scroll\", function (event) {\n            event.stopPropagation();\n          }, true);\n        })();\n        ", "args": []}
+DEBUG 2022-06-23 14:50:19,421 - http://127.0.0.1:62350 "POST /session/331d6e45e167cdd23f659822d61e2c1f/execute/sync HTTP/1.1" 500 2029
+DEBUG 2022-06-23 14:50:19,421 - Finished Request
+DEBUG 2022-06-23 14:50:49,800 - POST http://127.0.0.1:62420/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG 2022-06-23 14:50:49,802 - Starting new HTTP connection (1): 127.0.0.1:62420
+DEBUG 2022-06-23 14:50:51,832 - http://127.0.0.1:62420 "POST /session HTTP/1.1" 200 800
+DEBUG 2022-06-23 14:50:51,848 - Finished Request
+DEBUG 2022-06-23 14:50:54,867 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/window/rect {"x": null, "y": null, "width": 1280, "height": 800}
+DEBUG 2022-06-23 14:50:54,987 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/window/rect HTTP/1.1" 200 50
+DEBUG 2022-06-23 14:50:54,988 - Finished Request
+DEBUG 2022-06-23 14:50:54,988 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/timeouts {"implicit": 20000}
+DEBUG 2022-06-23 14:50:54,989 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/timeouts HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:50:54,990 - Finished Request
+DEBUG 2022-06-23 14:50:54,990 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/url {"url": "https://www.glassdoor.com/Reviews/index.htm"}
+DEBUG 2022-06-23 14:51:00,880 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/url HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:00,880 - Finished Request
+INFO 2022-06-23 14:51:00,881 - Driver launched and intialized on glassdoor.com
+DEBUG 2022-06-23 14:51:04,805 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "window.scrollTo(0, document.body.scrollHeight)", "args": []}
+DEBUG 2022-06-23 14:51:04,810 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:04,811 - Finished Request
+DEBUG 2022-06-23 14:51:08,167 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"Footer\"]/nav/ul[2]/li[3]/div/div/div[1]"}
+DEBUG 2022-06-23 14:51:08,180 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:08,181 - Finished Request
+DEBUG 2022-06-23 14:51:08,181 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/be872037-58db-4b26-86e0-de32ea923f6a/click {"id": "be872037-58db-4b26-86e0-de32ea923f6a"}
+DEBUG 2022-06-23 14:51:08,238 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/be872037-58db-4b26-86e0-de32ea923f6a/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:08,238 - Finished Request
+DEBUG 2022-06-23 14:51:08,239 - GET http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/source {}
+DEBUG 2022-06-23 14:51:08,295 - http://127.0.0.1:62420 "GET /session/62dd85e1a87b9d40489cfd7521f96702/source HTTP/1.1" 200 537100
+DEBUG 2022-06-23 14:51:08,299 - Finished Request
+DEBUG 2022-06-23 14:51:08,390 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "css selector", "value": "[id=\"option_22_2d018-5555-37be-082a-76617a3600c1\"]"}
+DEBUG 2022-06-23 14:51:08,404 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:08,405 - Finished Request
+DEBUG 2022-06-23 14:51:11,856 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/f194c496-3b39-4e10-8477-b2cfd949c567/click {"id": "f194c496-3b39-4e10-8477-b2cfd949c567"}
+DEBUG 2022-06-23 14:51:11,913 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/f194c496-3b39-4e10-8477-b2cfd949c567/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:11,913 - Finished Request
+INFO 2022-06-23 14:51:14,165 - Language succesfully changed to English
+DEBUG 2022-06-23 14:51:14,166 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"KeywordSearch\"]"}
+DEBUG 2022-06-23 14:51:16,158 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:16,158 - Finished Request
+DEBUG 2022-06-23 14:51:16,159 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6e1fdc23-2002-4a09-9f26-a73c00598f1c/value {"text": "pwc", "value": ["p", "w", "c"], "id": "6e1fdc23-2002-4a09-9f26-a73c00598f1c"}
+DEBUG 2022-06-23 14:51:16,597 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6e1fdc23-2002-4a09-9f26-a73c00598f1c/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:16,598 - Finished Request
+DEBUG 2022-06-23 14:51:16,598 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6e1fdc23-2002-4a09-9f26-a73c00598f1c/value {"text": "\ue007", "value": ["\ue007"], "id": "6e1fdc23-2002-4a09-9f26-a73c00598f1c"}
+DEBUG 2022-06-23 14:51:16,664 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6e1fdc23-2002-4a09-9f26-a73c00598f1c/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:16,666 - Finished Request
+DEBUG 2022-06-23 14:51:16,666 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainCol\"]/div/div[1]/div/div[1]/div/div[2]/h2/a"}
+DEBUG 2022-06-23 14:51:19,523 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:19,524 - Finished Request
+DEBUG 2022-06-23 14:51:19,524 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/559693ea-2d14-4c93-b51f-bc92d06236a1/click {"id": "559693ea-2d14-4c93-b51f-bc92d06236a1"}
+DEBUG 2022-06-23 14:51:27,451 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/559693ea-2d14-4c93-b51f-bc92d06236a1/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:27,452 - Finished Request
+INFO 2022-06-23 14:51:27,452 - Found result for pwc
+DEBUG 2022-06-23 14:51:27,452 - GET http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/source {}
+DEBUG 2022-06-23 14:51:28,540 - http://127.0.0.1:62420 "GET /session/62dd85e1a87b9d40489cfd7521f96702/source HTTP/1.1" 200 1164262
+DEBUG 2022-06-23 14:51:28,562 - Finished Request
+DEBUG 2022-06-23 14:51:28,942 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/url {"url": "https://www.glassdoor.com/Reviews/PwC-Reviews-E8450.htm"}
+DEBUG 2022-06-23 14:51:38,009 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/url HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:38,010 - Finished Request
+INFO 2022-06-23 14:51:38,010 - Succesfully got reviews page
+DEBUG 2022-06-23 14:51:41,928 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "\n        javascript:(function(){\n          document.getElementsByClassName('hardsellOverlay')[0].remove();\n          document.getElementsByTagName(\"body\")[0].style.overflow = \"scroll\";\n          let style = document.createElement('style');\n          style.innerHTML = `\n            #LoginModal {\n              display: none!important;\n            }\n          `;\n          document.head.appendChild(style);\n          window.addEventListener(\"scroll\", function (event) {\n            event.stopPropagation();\n          }, true);\n        })();\n        ", "args": []}
+DEBUG 2022-06-23 14:51:41,984 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:41,984 - Finished Request
+DEBUG 2022-06-23 14:51:41,985 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/window/rect {"x": null, "y": null, "width": 1384, "height": 789}
+DEBUG 2022-06-23 14:51:42,233 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/window/rect HTTP/1.1" 200 50
+DEBUG 2022-06-23 14:51:42,233 - Finished Request
+DEBUG 2022-06-23 14:51:49,174 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "window.scrollBy(0, arguments[0]);", "args": [500]}
+DEBUG 2022-06-23 14:51:49,206 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:49,207 - Finished Request
+DEBUG 2022-06-23 14:51:49,208 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/button/span"}
+DEBUG 2022-06-23 14:51:49,317 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:49,317 - Finished Request
+DEBUG 2022-06-23 14:51:49,317 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/163aafa0-86d6-4d17-b579-e682676db380/click {"id": "163aafa0-86d6-4d17-b579-e682676db380"}
+DEBUG 2022-06-23 14:51:50,594 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/163aafa0-86d6-4d17-b579-e682676db380/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:50,595 - Finished Request
+DEBUG 2022-06-23 14:51:52,756 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[2]/div[1]/div/div[1]"}
+DEBUG 2022-06-23 14:51:52,791 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:52,791 - Finished Request
+DEBUG 2022-06-23 14:51:52,792 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6e397cff-1fd9-45d2-af87-28ef603a8176/click {"id": "6e397cff-1fd9-45d2-af87-28ef603a8176"}
+DEBUG 2022-06-23 14:51:53,754 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6e397cff-1fd9-45d2-af87-28ef603a8176/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:53,754 - Finished Request
+DEBUG 2022-06-23 14:51:56,546 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[2]/div[1]/div/div[1]/div/div/div/input"}
+DEBUG 2022-06-23 14:51:56,578 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:51:56,579 - Finished Request
+DEBUG 2022-06-23 14:51:56,579 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value {"text": "belgium", "value": ["b", "e", "l", "g", "i", "u", "m"], "id": "6377b6ce-fff9-4c21-a516-4f02f42c6082"}
+DEBUG 2022-06-23 14:51:57,039 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:57,040 - Finished Request
+DEBUG 2022-06-23 14:51:58,889 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value {"text": "\ue015", "value": ["\ue015"], "id": "6377b6ce-fff9-4c21-a516-4f02f42c6082"}
+DEBUG 2022-06-23 14:51:58,916 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:51:58,917 - Finished Request
+DEBUG 2022-06-23 14:52:00,402 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value {"text": "\ue007", "value": ["\ue007"], "id": "6377b6ce-fff9-4c21-a516-4f02f42c6082"}
+DEBUG 2022-06-23 14:52:04,950 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/6377b6ce-fff9-4c21-a516-4f02f42c6082/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:04,952 - Finished Request
+DEBUG 2022-06-23 14:52:07,107 - GET http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/url {}
+DEBUG 2022-06-23 14:52:16,684 - http://127.0.0.1:62420 "GET /session/62dd85e1a87b9d40489cfd7521f96702/url HTTP/1.1" 200 186
+DEBUG 2022-06-23 14:52:16,684 - Finished Request
+INFO 2022-06-23 14:52:16,684 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+DEBUG 2022-06-23 14:52:16,684 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "\n        javascript:(function(){\n          document.getElementsByClassName('hardsellOverlay')[0].remove();\n          document.getElementsByTagName(\"body\")[0].style.overflow = \"scroll\";\n          let style = document.createElement('style');\n          style.innerHTML = `\n            #LoginModal {\n              display: none!important;\n            }\n          `;\n          document.head.appendChild(style);\n          window.addEventListener(\"scroll\", function (event) {\n            event.stopPropagation();\n          }, true);\n        })();\n        ", "args": []}
+DEBUG 2022-06-23 14:52:16,802 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:16,802 - Finished Request
+DEBUG 2022-06-23 14:52:20,227 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "window.scrollBy(0, arguments[0]);", "args": [500]}
+DEBUG 2022-06-23 14:52:20,378 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:20,379 - Finished Request
+DEBUG 2022-06-23 14:52:20,379 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/button/span"}
+DEBUG 2022-06-23 14:52:20,474 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:52:20,475 - Finished Request
+DEBUG 2022-06-23 14:52:20,475 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/506f1df4-6f50-4bf3-aecd-e31662eacd88/click {"id": "506f1df4-6f50-4bf3-aecd-e31662eacd88"}
+DEBUG 2022-06-23 14:52:21,811 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/506f1df4-6f50-4bf3-aecd-e31662eacd88/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:21,812 - Finished Request
+DEBUG 2022-06-23 14:52:24,605 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[2]/div[1]/div/div[1]"}
+DEBUG 2022-06-23 14:52:24,630 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:52:24,631 - Finished Request
+DEBUG 2022-06-23 14:52:24,631 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/a6c46a2f-4964-4d9f-ab6f-1c454549f747/click {"id": "a6c46a2f-4964-4d9f-ab6f-1c454549f747"}
+DEBUG 2022-06-23 14:52:25,815 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/a6c46a2f-4964-4d9f-ab6f-1c454549f747/click HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:25,816 - Finished Request
+DEBUG 2022-06-23 14:52:28,727 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"MainContent\"]/div/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[2]/div[1]/div/div[1]/div/div/div/input"}
+DEBUG 2022-06-23 14:52:28,753 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 200 88
+DEBUG 2022-06-23 14:52:28,753 - Finished Request
+DEBUG 2022-06-23 14:52:28,753 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value {"text": "netherlands", "value": ["n", "e", "t", "h", "e", "r", "l", "a", "n", "d", "s"], "id": "c6760f56-2461-4aea-a32a-ed03ec56641d"}
+DEBUG 2022-06-23 14:52:29,478 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:29,480 - Finished Request
+DEBUG 2022-06-23 14:52:30,849 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value {"text": "\ue015", "value": ["\ue015"], "id": "c6760f56-2461-4aea-a32a-ed03ec56641d"}
+DEBUG 2022-06-23 14:52:30,871 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:30,871 - Finished Request
+DEBUG 2022-06-23 14:52:32,778 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value {"text": "\ue007", "value": ["\ue007"], "id": "c6760f56-2461-4aea-a32a-ed03ec56641d"}
+DEBUG 2022-06-23 14:52:35,687 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element/c6760f56-2461-4aea-a32a-ed03ec56641d/value HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:35,687 - Finished Request
+DEBUG 2022-06-23 14:52:38,792 - GET http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/url {}
+DEBUG 2022-06-23 14:52:46,777 - http://127.0.0.1:62420 "GET /session/62dd85e1a87b9d40489cfd7521f96702/url HTTP/1.1" 200 191
+DEBUG 2022-06-23 14:52:46,779 - Finished Request
+INFO 2022-06-23 14:52:46,779 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+DEBUG 2022-06-23 14:52:46,779 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/execute/sync {"script": "\n        javascript:(function(){\n          document.getElementsByClassName('hardsellOverlay')[0].remove();\n          document.getElementsByTagName(\"body\")[0].style.overflow = \"scroll\";\n          let style = document.createElement('style');\n          style.innerHTML = `\n            #LoginModal {\n              display: none!important;\n            }\n          `;\n          document.head.appendChild(style);\n          window.addEventListener(\"scroll\", function (event) {\n            event.stopPropagation();\n          }, true);\n        })();\n        ", "args": []}
+DEBUG 2022-06-23 14:52:46,795 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/execute/sync HTTP/1.1" 200 14
+DEBUG 2022-06-23 14:52:46,796 - Finished Request
+INFO 2022-06-23 14:52:46,797 - raw_url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm
+INFO 2022-06-23 14:52:46,797 - url_filtered for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 14:52:46,797 - raw_url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm
+INFO 2022-06-23 14:52:46,797 - url_filtered for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+DEBUG 2022-06-23 14:52:46,797 - POST http://127.0.0.1:62420/session/62dd85e1a87b9d40489cfd7521f96702/element {"using": "xpath", "value": "//*[@id=\"KeywordSearch\"]"}
+DEBUG 2022-06-23 14:53:07,153 - http://127.0.0.1:62420 "POST /session/62dd85e1a87b9d40489cfd7521f96702/element HTTP/1.1" 404 1981
+DEBUG 2022-06-23 14:53:07,154 - Finished Request
+INFO 2022-06-23 14:55:28,789 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 14:55:41,484 - Language succesfully changed to English
+INFO 2022-06-23 14:56:04,775 - Found result for pwc
+INFO 2022-06-23 14:56:18,029 - Succesfully got reviews page
+INFO 2022-06-23 14:56:58,158 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:01:54,729 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:02:10,148 - Language succesfully changed to English
+INFO 2022-06-23 15:02:38,428 - Found result for pwc
+INFO 2022-06-23 15:02:55,680 - Succesfully got reviews page
+INFO 2022-06-23 15:04:37,715 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:08:11,026 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:08:33,172 - raw_url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm
+INFO 2022-06-23 15:08:33,173 - url_filtered for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 15:13:05,919 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:15:41,830 - raw_url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm
+INFO 2022-06-23 15:15:41,831 - url_filtered for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 15:18:51,984 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:19:02,588 - Language succesfully changed to English
+INFO 2022-06-23 15:19:36,961 - Found result for pwc
+INFO 2022-06-23 15:19:52,622 - Succesfully got reviews page
+INFO 2022-06-23 15:20:38,253 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:26:30,732 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:26:44,057 - Language succesfully changed to English
+INFO 2022-06-23 15:27:12,535 - Found result for pwc
+INFO 2022-06-23 15:27:28,338 - Succesfully got reviews page
+INFO 2022-06-23 15:28:15,127 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:28:45,085 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:30:54,219 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:31:07,132 - Language succesfully changed to English
+INFO 2022-06-23 15:31:30,513 - Found result for pwc
+INFO 2022-06-23 15:31:42,204 - Succesfully got reviews page
+INFO 2022-06-23 15:32:20,264 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:32:45,166 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:33:36,225 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:33:51,076 - Language succesfully changed to English
+INFO 2022-06-23 15:34:15,678 - Found result for pwc
+INFO 2022-06-23 15:34:27,712 - Succesfully got reviews page
+INFO 2022-06-23 15:35:13,917 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:39:33,969 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:39:47,942 - Language succesfully changed to English
+INFO 2022-06-23 15:40:13,663 - Found result for pwc
+INFO 2022-06-23 15:40:29,292 - Succesfully got reviews page
+INFO 2022-06-23 15:41:28,275 - Driver launched and intialized on glassdoor.com
+INFO 2022-06-23 15:41:39,813 - Language succesfully changed to English
+INFO 2022-06-23 15:42:05,289 - Found result for pwc
+INFO 2022-06-23 15:42:24,307 - Succesfully got reviews page
+INFO 2022-06-23 15:43:06,337 - url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:43:41,436 - url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:43:41,437 - raw_url for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm
+INFO 2022-06-23 15:43:41,437 - url_filtered for belgium is https://www.glassdoor.com/Reviews/PwC-Belgium-Reviews-EI_IE8450.0,3_IL.4,11_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 15:43:41,437 - raw_url for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm
+INFO 2022-06-23 15:43:41,438 - url_filtered for netherlands is https://www.glassdoor.com/Reviews/PwC-Netherlands-Reviews-EI_IE8450.0,3_IL.4,15_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 15:44:06,421 - Found result for deloitte
+INFO 2022-06-23 15:44:24,793 - Succesfully got reviews page
+INFO 2022-06-23 15:45:07,463 - url for belgium is https://www.glassdoor.com/Reviews/Deloitte-Belgium-Reviews-EI_IE2763.0,8_IL.9,16_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:45:42,874 - url for netherlands is https://www.glassdoor.com/Reviews/Deloitte-Netherlands-Reviews-EI_IE2763.0,8_IL.9,20_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME
+INFO 2022-06-23 15:45:42,875 - raw_url for belgium is https://www.glassdoor.com/Reviews/Deloitte-Belgium-Reviews-EI_IE2763.0,8_IL.9,16_IN25.htm
+INFO 2022-06-23 15:45:42,876 - url_filtered for belgium is https://www.glassdoor.com/Reviews/Deloitte-Belgium-Reviews-EI_IE2763.0,8_IL.9,16_IN25.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
+INFO 2022-06-23 15:45:42,876 - raw_url for netherlands is https://www.glassdoor.com/Reviews/Deloitte-Netherlands-Reviews-EI_IE2763.0,8_IL.9,20_IN178.htm
+INFO 2022-06-23 15:45:42,876 - url_filtered for netherlands is https://www.glassdoor.com/Reviews/Deloitte-Netherlands-Reviews-EI_IE2763.0,8_IL.9,20_IN178.htm?filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN
