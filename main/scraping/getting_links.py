@@ -20,7 +20,7 @@ import time
 
 
 # Create and configure logger
-logging.basicConfig(filename='test.log',
+logging.basicConfig(filename='getting_links.log',
                     level=logging.INFO, # Lowest level, to see all levels
                     force=True,
                     format='%(levelname)s %(asctime)s - %(message)s') # w for overwriting the log file each time, default is just appending
