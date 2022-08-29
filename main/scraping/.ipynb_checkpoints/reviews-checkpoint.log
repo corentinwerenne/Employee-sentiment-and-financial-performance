@@ -1,0 +1,4 @@
+2022-08-13 18:53:56,387 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.glassdoor.com:443
+2022-08-13 18:53:57,069 - urllib3.connectionpool - DEBUG - https://www.glassdoor.com:443 "GET /Reviews/Google-Reviews-E9079_P1.htm HTTP/1.1" 200 None
+2022-08-13 18:54:05,551 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.glassdoor.com:443
+2022-08-13 18:54:05,966 - urllib3.connectionpool - DEBUG - https://www.glassdoor.com:443 "GET /Reviews/Google-Reviews-E9079_P2.htm HTTP/1.1" 200 None

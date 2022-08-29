@@ -6,14 +6,11 @@ Author: Corentin Werenne
 
 # Imports
 import requests #For requesting html
-from bs4 import BeautifulSoup #For parsing html
-import js2py #Transforming javascript code into a dictionary type object
 import re #For regular expressions
-import codecs #To convert raw strings to normal ones
-import json #To convert a string to a dictionary
 import time
 import pandas as pd
 import random
+import datetime
 
 # Get credentials
 f = open('credentials.txt', 'r') #Opens the credentials.txt file for reading
@@ -79,7 +76,7 @@ def extract_from_review(review):
     rating_compensation_benefits = re.compile(r'\"ratingCompensationAndBenefits\":([0-5]),\"employer\"').search(review).group(1)
     is_current_job = re.compile(r'\"isCurrentJob\":([a-z]+),\"lengthOfEmployment\"').search(review).group(1)
     length_employment = re.compile(r'\"lengthOfEmployment\":(\d+),\"employmentStatus\"').search(review).group(1)
-    employment_status = re.compile(r'"employmentStatus":\"([A-Z]+)\","jobEndingYear"').search(review).group(1)
+    employment_status = re.compile(r'"employmentStatus":(.+?),"jobEndingYear"').search(review).group(1)
     # Probably needs adjustement when a year is provided
     job_ending_year = re.compile(r'"jobEndingYear":(.+?),"jobTitle"').search(review).group(1)
     pros = re.compile(r'\"pros\":\"(.+?)\",\"prosOriginal\":').search(review).group(1)
@@ -88,9 +85,12 @@ def extract_from_review(review):
     count_helpful = re.compile(r'\"countHelpful\":(\d+),\"countNotHelpful\":').search(review).group(1)
     count_nothelpful = re.compile(r'\"countNotHelpful\":(\d+),\"employerResponses\"').search(review).group(1)
     employer_reponses = re.compile(r'\"employerResponses\":(.+?),\"featured\"').search(review).group(1)
-    language_id = re.compile(r'\"languageId\":\"([a-z]+)\",\"translationMethod\"').search(review).group(1)
+    language_id = re.compile(r'\"languageId\":(.+?),\"translationMethod\"').search(review).group(1)
+    post_title = re.compile(r'\"summary\":(.+?),\"summaryOriginal\"').search(review).group(1)
+
     
     review_data = {'review_id': review_id,
+               'post_title': post_title,
                'review_datetime': review_datetime,
                'review_overall': rating_overall,
                'rating_ceo': rating_ceo,
@@ -116,42 +116,81 @@ def extract_from_review(review):
     
     return review_data
 
+def datestr_to_str(date_str):
+    """
+    Convert a string with format 2022-06-13T05:07:07.813 to a datetime object
+    """
+    t_index = date_str.index('T')
+    date = date_str[:t_index]
+    date_time = datetime.datetime.strptime(date, '%Y-%m-%d')
+    return date_time
+    
 
-def url_to_df(url, pages):
+def url_to_df(url, max_date, filter_path, s):
     """
 
     Parameters
     ----------
-    url : TYPE
-        DESCRIPTION.
-    p : TYPE
-        DESCRIPTION.
-    s : TYPE
-        DESCRIPTION.
+    url : str
+        Base url with no filter except maybe location.
+        ex: 'https://www.glassdoor.com/Reviews/Deloitte-Reviews-E2763.htm'
+    max_date : string
+        Defines how far the scraper will go in the past. 
+        WARNING: This features only works properly if sorted by most recent
+        ex: '2022-05-09'
+    filter_path : str
+        Add a filter to the reviews like job type, language or sorted by most recent.
+        ex: '?sort.sortType=RD&sort.ascending=false&filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN'
+    s : int
+        Defines how much pause between each request to the server. The lower the faster
+        but also the more at risk of getting banned.
+        
 
     Returns
     -------
-    None.
+    A list of dictionaries containing the information extracted from the reviews.
 
     """
+    # Pattern to extract the reviews out of the javascript response
     review_pattern = re.compile(r'{\"__typename\":\"EmployerReview\".+?\"translationMethod\":.+?}')
+    
+    # Transform string date into datetime object for comparison
+    max_date = datetime.datetime.strptime(max_date, '%Y-%m-%d')
     
     reviews_parsed = []
     htm_index = url.index('.htm')
-    for p in range(pages + 1):
-        urlp = url[:htm_index] + '_P' + str(p) + '.htm'
+    page = 1
+    
+    urlp = url[:htm_index] + '_P' + str(page) + '.htm' + filter_path 
+    response = get_response(urlp)
+    reviews = get_reviews(response)
+    for review in reviews:
+        reviews_parsed.append(extract_from_review(review))
+    latest_date = reviews_parsed[-1]['review_datetime']
+    time.sleep(random.uniform(s-1, s+1))
+
+    while datestr_to_str(latest_date) > max_date:
+        page +=1
+        urlp = url[:htm_index] + '_P' + str(page) + '.htm' + filter_path 
         print(urlp)
         response = get_response(urlp)
-        print(response)
         reviews = get_reviews(response)
-        print(reviews)
         for review in reviews:
             reviews_parsed.append(extract_from_review(review))
-        time.sleep(random.uniform(4, 7))
+        latest_date = reviews_parsed[-1]['review_datetime']
+        print(latest_date)
+        time.sleep(random.uniform(s-1, s+1))
+        if page % 100 == 0:
+            pd.DataFrame(reviews_parsed[:-2]).to_csv(f'../../data/rev_{page}.csv')
+            reviews_parsed = []
+            time.sleep(random.uniform(90, 110))
+        else: 
+            continue
         
         
     return reviews_parsed
 
-reviews_df = url_to_df('https://www.glassdoor.com/Reviews/Deloitte-Reviews-E2763.htm', 10)
-
-    
+reviews_df = url_to_df('https://www.glassdoor.com/Reviews/Deloitte-Reviews-E2763.htm',
+                       '2022-03-15',
+                       '?sort.sortType=RD&sort.ascending=false&filter.iso3Language=eng&filter.employmentStatus=REGULAR&filter.employmentStatus=PART_TIME&filter.employmentStatus=INTERN',
+                       6)
