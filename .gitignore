@@ -1,2 +1,5 @@
 main/scraping/credentials.txt
+data
+main/scraping/reviews.log
+main/scraping/links.log
 .DS_Store
